@@ -2,7 +2,7 @@
 
 ## Currency Convertor App
 
-\*\*The currency converter app performs two main functions: currency conversion and transfer records management. It allows users to convert the value of one currency into another using up-to-date exchange rates, featuring a user-friendly interface for selecting currencies and entering amounts. Additionally, the app records details of currency transfers and provides the option to delete these transfer records as needed.
+The currency converter app performs two main functions: currency conversion and transfer records management. It allows users to convert the value of one currency into another using up-to-date exchange rates, featuring a user-friendly interface for selecting currencies and entering amounts. Additionally, the app records details of currency transfers and provides the option to delete these transfer records as needed.
 
 ## Technologies Used💻
 
@@ -12,42 +12,39 @@
 
 ## Prerequisites⚡
 
-Node.js installed on your machine
-MongoDB instance running (local or cloud-based)
-Visual Studio Code (VS Code) installed
+- Node.js installed on your machine
+- MongoDB instance running (local or cloud-based)
+- Visual Studio Code (VS Code) installed
 
 ## Getting Started🐱‍🏍
 
 - Clone the repository:
 
   > git clone https://github.com/Hirushi-Sandarashmi/Currency-Convertor-App.git
+
   > cd currency-converter-app
 
 - Install dependencies for the frontend:
 
-  cd frontend
   yarn
 
 - Install dependencies for the backend:
 
-  cd backend
   yarn
 
 ## Configuration✨
 
-- **Set up environment variables:**
-  Rename the envTemplate into `.env` file in the project root and change the following:
+- Set up environment variables: Rename the envTemplate into `.env` file in the project root and change the following:
 
-      For Back-End
+- For Back-End
 
   MONGO_URI=your-mongodb-uri
   PORT=your-port
   API_KEY=your-currency-api-key
 
-      For Front-End
+- For Front-End
 
-      JWT_SECRET=anything
-
+  JWT_SECRET=anything
   AUTH_SECRET=auth secret
   API_URL=your api url
   CURRENCY_API_KEY=currency api key
