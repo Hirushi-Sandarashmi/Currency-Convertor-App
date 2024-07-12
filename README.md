@@ -35,37 +35,13 @@ MongoDB instance running (local or cloud-based)
 Visual Studio Code (VS Code) installed
 
 \*Installation
-Clone the repository:
-
-git clone https://github.com/your-username/currency-converter-app.git
-cd currency-converter-app
 
 \*Install dependencies for the frontend:
-
-Open the frontend directory in VS Code:
 
 If you don't have yarn installed, you can install it
 -yarn
 Optionally, delete package-lock.json if you want to:
 -rm package-lock.json
-
-\*Install the necessary libraries:
-
-yarn install
-yarn add @nextui-org/react
-yarn add react-toastify
-yarn add next-auth@beta
-yarn add @tanstack/react-query
-yarn add @tanstack/react-query-devtools@4
-yarn add react-icons
-yarn dev run-run the code
-
-\*Install dependencies for the backend:
-
-yarn install
-yarn add express
-yarn add mongoose
-node index.js or node . to run the code
 
 Configuration
 Set up environment variables:
