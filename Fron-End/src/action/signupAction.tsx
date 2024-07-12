@@ -12,7 +12,7 @@ export const signupAction = async (formData: FormData) => {
     email: jsonData.email,
     password: jsonData.password,
   });
-  console.log("ll", raw);
+
   const requestOptions = {
     method: "POST",
     headers: {
@@ -22,7 +22,7 @@ export const signupAction = async (formData: FormData) => {
   };
 
   const res = await fetch(apiurl + "auth/register", requestOptions);
-  console.log(res);
+
   if (res.ok) {
     const data = await res.json();
     redirect("/login");

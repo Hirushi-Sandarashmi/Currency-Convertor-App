@@ -1,82 +1,108 @@
-\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***Currency Converter App**\*\***\*\*\*\***\*\***\*\*\*\***\*\***\*\*\*\***\*\***\***\*\***\*\*\*\***\*\***\*\*\*\***\*\***\*\*\*\***\*\***
-**\***Technologies Used**\*\*\***
-Frontend: Next.js
-Backend: Node.js
-Database: MongoDB
+![enter image description here](https://www.shutterstock.com/image-vector/currency-exchange-money-conversion-euro-600nw-2169800853.jpg)
 
-\***\*Project Structure**\*\*\*\*\*
+## Currency Convertor App
 
-/project-root
-├── /frontend # Frontend files (Next.js)
-│ ├── /pages # Next.js pages
-│ ├── /components # Reusable components
-│ ├── /public # Static files
-│ ├── /styles # CSS/SCSS files
-│ └── /utils # Utility functions
-├── /backend # Backend files (Node.js)
-│ ├── /controllers # Controllers
-│ ├── /models # Database models (Mongoose)
-│ ├── /routes # API routes
-│ ├── /config # Configuration files (e.g., environment variables)
-│ ├── /middleware # Middleware functions
-│ └── server.js # Entry point for the server
-├── /db # Database configuration
-│ └── connect.js # MongoDB connection setup
-├── .env # Environment variables
-├── package.json # Project dependencies
-└── README.md # Project documentation
+\*\*The currency converter app performs two main functions: currency conversion and transfer records management. It allows users to convert the value of one currency into another using up-to-date exchange rates, featuring a user-friendly interface for selecting currencies and entering amounts. Additionally, the app records details of currency transfers and provides the option to delete these transfer records as needed.
 
-**\*\***Step-by-Step Run Instructions**\***
+## Technologies Used💻
 
-\*Step-by-Step Run Instructions
--Prerequisites
+- Frontend: Next.js
+- Backend: Node.js
+- Database: MongoDB
+
+## Prerequisites⚡
+
 Node.js installed on your machine
 MongoDB instance running (local or cloud-based)
 Visual Studio Code (VS Code) installed
 
-\*Installation
+## Getting Started🐱‍🏍
 
-\*Install dependencies for the frontend:
+- Clone the repository:
 
-If you don't have yarn installed, you can install it
--yarn
-Optionally, delete package-lock.json if you want to:
--rm package-lock.json
+  > git clone https://github.com/Hirushi-Sandarashmi/Currency-Convertor-App.git
+  > cd currency-converter-app
 
-Configuration
-Set up environment variables:
-Create a .env file in the project root and add the following:
+- Install dependencies for the frontend:
 
-for back end :env-
-MONGO_URI=your-mongodb-uri
-PORT=your-port
-API_KEY=your-currency-api-key-
+  cd frontend
+  yarn
 
-ex: JWT_SECRET="Hirushi"
-PORT=3001
-MONGODB_URI=mongodb://127.0.0.1:27017/CurrencyApi
-CURRENCY_API_KEY="1a54e5687eb89f5aa508cc2c"
+- Install dependencies for the backend:
 
-for front end: env
-ex:AUTH_SECRET="1dlbQXnjV8itpI7qXewHiXOBAsT2fs4e5LudLZVqV4I="
-API_URL="http://127.0.0.1:3001/api/"
-CURRENCY_API_KEY="1a54e5687eb89f5aa508cc2c"
+  cd backend
+  yarn
 
-\*Running the Project
-Start the MongoDB server:
-Ensure your MongoDB server is running. If using a local instance, you can start it with:
+## Configuration✨
 
----back-end---
-code .
-node index.js
----fron-end---
-Start the frontend development server:
-yarn run dev
-Access the application:
-Open your browser and go to http://localhost:3000
+- **Set up environment variables:**
+  Rename the envTemplate into `.env` file in the project root and change the following:
 
----
+      For Back-End
 
-live demo:https://drive.google.com/file/d/1rOaKg8tCkEFmkTvD7f7qa_IdVOwt26OF/view?usp=sharing
+  MONGO_URI=your-mongodb-uri
+  PORT=your-port
+  API_KEY=your-currency-api-key
 
----
+      For Front-End
+
+      JWT_SECRET=anything
+
+  AUTH_SECRET=auth secret
+  API_URL=your api url
+  CURRENCY_API_KEY=currency api key
+
+## Running the Project✔
+
+- Back-End
+
+  node .
+  node index.js
+
+- Front-End
+
+  yarn run dev
+
+## Demo
+
+[https://drive.google.com/file/d/1rOaKg8tCkEFmkTvD7f7qa_IdVOwt26OF/view?usp=sharing](https://drive.google.com/file/d/1rOaKg8tCkEFmkTvD7f7qa_IdVOwt26OF/view?usp=sharing)
+
+## Project Structure
+
+/project-root
+
+├── /frontend # Frontend files (Next.js)
+
+│ ├── /pages # Next.js pages
+
+│ ├── /components # Reusable components
+
+│ ├── /public # Static files
+
+│ ├── /styles # CSS/SCSS files
+
+│ └── /utils # Utility functions
+
+├── /backend # Backend files (Node.js)
+
+│ ├── /controllers # Controllers
+
+│ ├── /models # Database models (Mongoose)
+
+│ ├── /routes # API routes
+
+│ ├── /config # Configuration files (e.g., environment variables)
+
+│ ├── /middleware # Middleware functions
+
+│ └── server.js # Entry point for the server
+
+├── /db # Database configuration
+
+│ └── connect.js # MongoDB connection setup
+
+├── .env # Environment variables
+
+├── package.json # Project dependencies
+
+└── README.md # Project documentation

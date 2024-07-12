@@ -36,7 +36,7 @@ const initialDatax: CurrencyRates = {
 
 export default function MainBanner() {
   const session = useSession();
-  console.log("sessionn", session);
+
   const [amount, setAmount] = useState("1");
   const [amountError, setAmountError] = useState<string | null>(null);
   const from = useRef("USD");

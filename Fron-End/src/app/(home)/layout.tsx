@@ -19,8 +19,9 @@ export default function RootLayout({
         <Providers>
           <>
             <MainNavbar />
-
-            {children}
+            <div className="flex justify-center min-w-screen min-h-screen">
+              {children}
+            </div>
           </>
         </Providers>
       </body>

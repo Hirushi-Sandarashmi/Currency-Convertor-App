@@ -38,7 +38,6 @@ export default function Records() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const queryClient = useQueryClient();
 
-  console.log("sessionnnn", session.data?.id);
   const { isLoading, error, data } = useQuery({
     queryKey: ["transferData"],
     queryFn: async () =>
@@ -50,7 +49,7 @@ export default function Records() {
       ).then((res) => res.json()),
     enabled: !!session.data?.id,
   });
-  console.log(data);
+
   const deleteData = useMutation({
     mutationFn: async (id: string) =>
       await fetch(`http://127.0.0.1:3001/api/transactions/${id}`, {

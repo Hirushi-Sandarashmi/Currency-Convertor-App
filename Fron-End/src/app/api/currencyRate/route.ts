@@ -9,7 +9,7 @@ const GET = async (request: NextRequest) => {
     );
   try {
     const apikey = process.env.CURRENCY_API_KEY;
-    console.log("apiKey:", apikey);
+
     const res = await fetch(
       "https://v6.exchangerate-api.com/v6/" + apikey + "/latest/" + type,
       {
@@ -17,7 +17,7 @@ const GET = async (request: NextRequest) => {
       }
     );
     const results = await res.json();
-    console.log("cccc:", results);
+
     return new NextResponse(JSON.stringify(results), { status: 200 });
   } catch (e: any) {
     return new NextResponse(JSON.stringify({ msg: e.messgae }), {
