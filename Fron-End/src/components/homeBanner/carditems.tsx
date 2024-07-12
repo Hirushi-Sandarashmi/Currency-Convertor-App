@@ -36,16 +36,16 @@ const countries: Country[] = [
 
 const CountryList: React.FC = () => {
   return (
-    <div className="flex justify-center w-full h-full p-6">
-      <div className="flex flex-wrap justify-center gap-4">
+    <div className="flex justify-center w-full h-full pt-10">
+      <div className="flex flex-wrap justify-center gap-2">
         {countries.map((country, index) => (
-          <div key={index} className="w-1/2 sm:w-1/3 p-2">
-            <Card className="max-w-[400px] mx-auto">
+          <div key={index}>
+            <Card className="w-[150px] mx-auto">
               <CardHeader className="flex gap-3">
                 <Image
                   alt={`${country.name} flag`}
                   height={40}
-                  radius="sm"
+                  radius="none"
                   src={`${country.iconUrl}`}
                   width={40}
                 />
@@ -58,11 +58,12 @@ const CountryList: React.FC = () => {
                 <p className="">1 USD = {country.value}</p>
               </CardBody>
               <Divider />
-              <CardFooter>
+              <CardFooter className="p-2">
                 <Link
                   isExternal
                   showAnchorIcon
                   href="https://www.exchangerate-api.com/docs/free"
+                  className="text-xs"
                 >
                   Visit ExchangeRate API
                 </Link>

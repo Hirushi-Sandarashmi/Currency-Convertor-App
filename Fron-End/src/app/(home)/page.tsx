@@ -11,11 +11,11 @@ export default async function Home() {
   }
 
   return (
-    <main className="flex min-h-screen p-8">
-      <div className="flex">
-        <div className="">
+    <main className="flex min-h-screen p-8 justify-center items-center">
+      <div className="">
+        <div className="w-[1024px]">
           <div className="flex">
-            <div className="w-[600px]  h-[500px] -mt-2">
+            <div className="min-w-[600px]">
               <MainBanner />
             </div>
             <div className="p-4">

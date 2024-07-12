@@ -71,18 +71,18 @@ export default function Records() {
   });
 
   return (
-    <>
+    <div className="mt-10">
       <ToastContainer />
       {error ? (
-        <div className="w-[1200px] h-[600px] flex flex-col justify-center items-center">
+        <div className="w-[1024px] h-[600px] flex flex-col justify-center items-center">
           Error: API not responding!
         </div>
       ) : isLoading ? (
-        <div className="w-[1200px] h-[600px] flex flex-col justify-center items-center">
+        <div className="w-[1024px] h-[600px] flex flex-col justify-center items-center">
           <CircularProgress size="lg" aria-label="Loading..." />
         </div>
       ) : (
-        <div className="rounded-lg w-[1200px] h-[600px] ml-16 -mr-12 p-4 ">
+        <div className="rounded-lg w-[1000px] h-[600px]">
           <Table aria-label="Transactions table">
             <TableHeader>
               <TableColumn>AMOUNT</TableColumn>
@@ -156,7 +156,7 @@ export default function Records() {
           <Button
             color="default"
             variant="bordered"
-            className="p-6 text-lg mt-4 mb-4 w-[1150px] ml-2"
+            className="p-6 text-lg mt-4 mb-4 w-full ml-2"
             as={Link}
             href="/"
           >
@@ -164,6 +164,6 @@ export default function Records() {
           </Button>
         </div>
       )}
-    </>
+    </div>
   );
 }
